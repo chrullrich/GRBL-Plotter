@@ -524,6 +524,7 @@ namespace GRBL_Plotter
                     if (iamSerial == 1)
 						grbl.Clear();
 
+                    serialPort.DtrEnable = true;
                     if (Properties.Settings.Default.serialMinimize)
                         countMinimizeForm = (int)(3000 / timerSerial.Interval); 	// minimize window after 5 sec.
 
